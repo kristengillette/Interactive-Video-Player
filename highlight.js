@@ -17,7 +17,7 @@ $('video')[0].player.media.addEventListener('timeupdate', function() {
 
 $('span').click(function() {
 	var spanTime = $(this).attr('id');
-	$('video')[0].player.media.currentTime = times[spanTime];
+	$('video')[0].player.media.currentTime = times[spanTime] + 0.01;
 });
 	
 });
