@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Video Player</title>
 
-    <script src="mejs/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="mejs/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
     	<link rel="stylesheet" href="normalize.css">
@@ -16,9 +16,10 @@
   <body>
 
     <div class="wrapper">
-      <video class="mejs-ted" width="640" height="360" id="video">
+      <video controls class="mejs-ted" width="640" height="360" id="video">
         <source src="video/video.mp4" type="video/mp4" />
         <source src="video/video.ogg" type="video/ogg" />
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
       </video>
       </div>
     <p>
@@ -53,7 +54,7 @@
 
 startLanguauge: 'en',
 			translationSelector: true,
-			  features: ['playpause', 'progress', 'current','duration','tracks','volume','fullscreen'],
+			  features: ['playpause', 'progress', 'current','duration','tracks','captions', 'volume','fullscreen'],
 			  alwaysShowControls: true
 
 });
