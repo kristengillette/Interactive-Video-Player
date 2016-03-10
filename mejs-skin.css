@@ -174,7 +174,12 @@ transition: all 0.75s ease-out;
 	color: #333;
 }
 .mejs-ted .mejs-controls .mejs-captions-button {
-	display: none;
+	top: 27px;
+	right: 90px;
+}
+
+.mejs-controls .mejs-captions-button button {
+    background-position: -48px 0;
 }
 
 .mejs-ted .mejs-controls .mejs-time span {
@@ -190,7 +195,5 @@ padding: 7px 3px 0 3px;
 	display: none;
 }
 
-.mejs-ted .mejs-controls .mejs-duration-container {
-	background: orange;
-}
+
 
