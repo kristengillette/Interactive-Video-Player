@@ -8,6 +8,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="mejs/mediaelement-and-player.min.js"></script>
+    <script src="highlight.js"></script>
     <link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
     	<link rel="stylesheet" href="normalize.css">
     	<link rel="stylesheet" href="mejs-skin.css">
@@ -16,35 +17,32 @@
   <body>
 
     <div class="wrapper">
-      <video controls class="mejs-ted" width="640" height="360" id="video">
+      <video controls class="mejs-treehouse" width="100%" height="100%" id="video">
         <source src="video/video.mp4" type="video/mp4" />
         <source src="video/video.ogg" type="video/ogg" />
         <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
       </video>
       </div>
     <p>
-    	<span>Now that we've looked at the architecture of the internet, let's see how you might </span>
-		<span>connect your personal devices to the internet inside your house. </span>
-		<span>Well there are many ways to connect to the internet, and </span>
-		<span>most often people connect wirelessly. </span>
-		<span>Let's look at an example of how you can connect to the internet.</span>
+    	<span id="0">Now that we've looked at the architecture of the internet, let's see how you might </span>
+		<span id="1">connect your personal devices to the internet inside your house. </span>
+		<span id="2">Well there are many ways to connect to the internet, and </span>
+		<span id="3">most often people connect wirelessly. </span>
+		<span id="4">Let's look at an example of how you can connect to the internet.</span>
 	</p>
-	<br />
 	<p>
-		<span> If you live in a city or a town, you probably have a coaxial cable for </span>
-		<span>cable Internet, or a phone line if you have DSL, running to the outside of </span>
-		<span>your house, that connects you to the Internet Service Provider, or ISP. </span>
-		<span>If you live far out in the country, you'll more likely have </span>
-		<span>a dish outside your house, connecting you wirelessly to your closest ISP, or </span>
-		<span>you might also use the telephone system. </span>
-		<span>Whether a wire comes straight from the ISP hookup outside your house, or </span>
-		<span>it travels over radio waves from your roof, </span>
-		<span>the first stop a wire will make once inside your house, is at your modem. </span>
-		<span>A modem is what connects the internet to your network at home. </span>
-		<span>A few common residential modems are DSL or</span>
+		<span id="5"> If you live in a city or a town, you probably have a coaxial cable for </span>
+		<span id="6">cable Internet, or a phone line if you have DSL, running to the outside of </span>
+		<span id="7">your house, that connects you to the Internet Service Provider, or ISP. </span>
+		<span id="8">If you live far out in the country, you'll more likely have </span>
+		<span id="9">a dish outside your house, connecting you wirelessly to your closest ISP, or </span>
+		<span id="10">you might also use the telephone system. </span> 
+		<span id="11">Whether a wire comes straight from the ISP hookup outside your house, or </span>
+		<span id="12">it travels over radio waves from your roof, </span>
+		<span id="13">the first stop a wire will make once inside your house, is at your modem. </span>
+		<span id="14">A modem is what connects the internet to your network at home. </span>
+		<span id="15">A few common residential modems are DSL or</span>
 	</p>
-
-	</div>
 	<script>
 
 
@@ -65,6 +63,7 @@ startLanguauge: 'en',
 				$(".mejs-time").fadeOut("slow");
 				$(".mejs-volume-button").fadeOut("slow");
 				$(".mejs-fullscreen-button").fadeOut("slow");
+				$(".mejs-captions-button").fadeOut("slow");
 				$('.mejs-time-rail').css('margin-top', '45px');
 				};
 		});
@@ -74,6 +73,7 @@ startLanguauge: 'en',
 			$(".mejs-time").fadeIn("slow");
 			$(".mejs-volume-button").fadeIn("slow");
 			$(".mejs-fullscreen-button").fadeIn("slow");
+			$(".mejs-captions-button").fadeIn("slow");
 		    $('.mejs-time-rail').css('margin-top', '0px');
 		        		
 				});

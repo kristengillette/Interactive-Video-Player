@@ -11,9 +11,10 @@ body {
 }
 
 .wrapper {
-  max-width: 90%;
+	width: 100%;
   margin: 0 auto;
   padding-bottom: 10px;
+  max-height: 360px;
 }
 
 video, audio, .mejs-ted {
@@ -23,11 +24,22 @@ video, audio, .mejs-ted {
 
 
 p {
-	padding-left: 1%;
+	padding: 10px;
 	font-size: 14px;
 	line-height: 2em;
 	color: gray;
 	max-width: 640px;
-	margin: 0 auto;
+	margin: 10px auto;
 	text-align: left;
+}
+
+@media (min-width: 600px) {
+	.wrapper {
+		max-width: 640px;
+	}
+
+	p {
+		padding:0 1% 0 0;
+		max-width: 640px;
+	}
 }

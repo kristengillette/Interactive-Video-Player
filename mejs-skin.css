@@ -1,19 +1,19 @@
 /* TED player */
-.mejs-container.mejs-ted {
-
+.mejs-container.mejs-treehouse {
+	margin: 0 auto;
 }
-.mejs-ted .mejs-controls {
+.mejs-treehouse .mejs-controls {
 	background: none;
 	height: 65px;
 }
 
-.mejs-ted .mejs-button,
-.mejs-ted .mejs-time {
+.mejs-treehouse .mejs-button,
+.mejs-treehouse .mejs-time {
 	position: absolute;
 	background: none;
 }
 
-.mejs-ted .mejs-controls .mejs-time-rail {
+.mejs-treehouse .mejs-controls .mejs-time-rail {
 	-webkit-transition: all 0.75s ease-out;
 -moz-transition: all 0.75s ease-out;
 -ms-transition: all 0.75s ease-out;
@@ -21,39 +21,39 @@
 transition: all 0.75s ease-out;
 }
 
-.mejs-ted .mejs-controls .mejs-time-rail .mejs-time-total {
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-total {
 	height: 3px;
 	background: none;
 	background-color: rgba(89, 84, 84, .5);
 }
-.mejs-ted .mejs-controls .mejs-time-rail .mejs-time-buffering {
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-buffering {
 	height: 6px;
 	display: none;
 }
-.mejs-ted .mejs-controls .mejs-time-rail .mejs-time-loaded {
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-loaded {
 	background: none;
 	width: 0;
 	height: 3px;
 	background-color: rgba(184, 178, 178, .5);
 }
-.mejs-ted .mejs-controls .mejs-time-rail .mejs-time-current {
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-current {
 	width: 0;
 	height: 3px;
 	background: none;
 	background-color: orange;
 }
-.mejs-ted .mejs-controls .mejs-time-rail .mejs-time-handle  {
+.mejs-treehouse .mejs-controls .mejs-time-rail .mejs-time-handle  {
 	display: none;
 }
 
-.mejs-ted .mejs-controls .mejs-playpause-button  {
+.mejs-treehouse .mejs-controls .mejs-playpause-button  {
 	top: 29px;
 	left: 9px;
 	width: 49px;
 	height: 28px;
 }
 
-.mejs-ted .mejs-time {
+.mejs-treehouse .mejs-time {
 	top: 29px;
 	left: 50px;
 	width: 49px;
@@ -61,7 +61,7 @@ transition: all 0.75s ease-out;
 
 }
 
-.mejs-ted .mejs-controls .mejs-playpause-button  button {
+.mejs-treehouse .mejs-controls .mejs-playpause-button  button {
 	width: 49px;
 	height: 28px;
 	background: url(icons/play-icon.png) no-repeat;
@@ -69,19 +69,19 @@ transition: all 0.75s ease-out;
 	padding: 0;
 	background-color: transparent;
 }
-.mejs-ted .mejs-controls .mejs-pause button  {
+.mejs-treehouse .mejs-controls .mejs-pause button  {
 	background-position: 0 -23px;
 	background: url(icons/pause-icon.png) no-repeat;
 }
 
-.mejs-ted .mejs-controls .mejs-fullscreen-button  {
+.mejs-treehouse .mejs-controls .mejs-fullscreen-button  {
 	top: 30px;
 	right: 9px;
 	width: 22px;
 	height: 22px;
 }
 
-.mejs-ted .mejs-controls .mejs-fullscreen-button button {
+.mejs-treehouse .mejs-controls .mejs-fullscreen-button button {
 	background: url(icons/fullscreen-icon.png) no-repeat;
 	top: 0px;
 	right: 0px;
@@ -90,7 +90,7 @@ transition: all 0.75s ease-out;
 	margin: 0;
 }
 
-.mejs-ted .mejs-controls .mejs-unfullscreen  button {
+.mejs-treehouse .mejs-controls .mejs-unfullscreen  button {
 	background: url(icons/fullscreen-icon.png) no-repeat;
 	top: 0px;
 	right: 0px;
@@ -98,27 +98,27 @@ transition: all 0.75s ease-out;
 	height: 22px;
 }
 
-.mejs-ted .mejs-controls .mejs-volume-button  {
+.mejs-treehouse .mejs-controls .mejs-volume-button  {
 	top: 30px;
 	right: 50px;
 	width: 22px;
 	height: 22px;
 }
-.mejs-ted .mejs-controls .mejs-mute button {
+.mejs-treehouse .mejs-controls .mejs-mute button {
 	background: url(icons/volume-on-icon.png);
 	width: 22px;
 	height: 22px;
 	margin: 0;
 	padding: 0;
 }
-.mejs-ted .mejs-controls .mejs-unmute button {
+.mejs-treehouse .mejs-controls .mejs-unmute button {
 	background: url(icons/volume-off-icon.png) no-repeat;
 	width: 22px;
 	height: 22px;
 	margin: 0;
 	padding: 0;	
 }
-.mejs-ted  .mejs-controls .mejs-volume-button .mejs-volume-slider {
+.mejs-treehouse  .mejs-controls .mejs-volume-button .mejs-volume-slider {
 	background: #fff;
 	border: solid 1px #aaa;
 	border-width: 1px 1px 0 1px;
@@ -126,27 +126,27 @@ transition: all 0.75s ease-out;
 	height: 65px;
 	top: -65px;
 }
-.mejs-ted  .mejs-controls .mejs-volume-button .mejs-volume-total {
+.mejs-treehouse  .mejs-controls .mejs-volume-button .mejs-volume-total {
 	background: gray;
 	left: 8px;
 	width: 6px;
 	height: 50px;
 }
-.mejs-ted  .mejs-controls .mejs-volume-button .mejs-volume-current {
+.mejs-treehouse  .mejs-controls .mejs-volume-button .mejs-volume-current {
 	left: 8px;
 	width: 6px;	
 	background: orange;
 	height: 50px;
 }
 
-.mejs-ted  .mejs-controls .mejs-volume-button .mejs-volume-handle {
+.mejs-treehouse  .mejs-controls .mejs-volume-button .mejs-volume-handle {
 	display: none;
 }
 
-.mejs-ted .mejs-controls .mejs-time span {
+.mejs-treehouse .mejs-controls .mejs-time span {
 	color: #333;
 }
-.mejs-ted .mejs-controls .mejs-currenttime-container  {
+.mejs-treehouse .mejs-controls .mejs-currenttime-container  {
 	position: absolute;
 	top: 32px;
 	right: 100px;
@@ -157,7 +157,7 @@ transition: all 0.75s ease-out;
 	border-radius: 3px;
 	color: #333;
 }
-.mejs-ted .mejs-controls .mejs-duration-container  {
+.mejs-treehouse .mejs-controls .mejs-duration-container  {
 
 	position: absolute;
 	top: 32px;
@@ -170,10 +170,10 @@ transition: all 0.75s ease-out;
 	color: #333;
 }
 
-.mejs-ted .mejs-controls .mejs-time  button{
+.mejs-treehouse .mejs-controls .mejs-time  button{
 	color: #333;
 }
-.mejs-ted .mejs-controls .mejs-captions-button {
+.mejs-treehouse .mejs-controls .mejs-captions-button {
 	top: 27px;
 	right: 90px;
 }
@@ -182,12 +182,12 @@ transition: all 0.75s ease-out;
     background-position: -48px 0;
 }
 
-.mejs-ted .mejs-controls .mejs-time span {
+.mejs-treehouse .mejs-controls .mejs-time span {
 	color: white;
 	font-size: 14px;
 }
 
-.mejs-ted .mejs-controls .mejs-time {
+.mejs-treehouse .mejs-controls .mejs-time {
 padding: 7px 3px 0 3px;
 }
 
