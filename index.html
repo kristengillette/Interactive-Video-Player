@@ -5,11 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Video Player</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="mejs/mediaelement-and-player.min.js"></script>
-    <script src="highlight.js"></script>
-    <link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
+    	<link rel="stylesheet" href="mejs/mediaelementplayer.min.css" />
     	<link rel="stylesheet" href="normalize.css">
     	<link rel="stylesheet" href="mejs-skin.css">
         <link rel="stylesheet" href="style.css">
@@ -17,7 +13,7 @@
   <body>
 
     <div class="wrapper">
-      <video controls class="mejs-treehouse" width="100%" height="100%" id="video">
+      <video controls class="mejs-treehouse" width="640" height="360" id="video">
         <source src="video/video.mp4" type="video/mp4" />
         <source src="video/video.ogg" type="video/ogg" />
         <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
@@ -43,41 +39,10 @@
 		<span id="14">A modem is what connects the internet to your network at home. </span>
 		<span id="15">A few common residential modems are DSL or</span>
 	</p>
-	<script>
-
-
-
-	new MediaElementPlayer('video', {success: function(media, node, player) {
-},
-
-startLanguauge: 'en',
-			translationSelector: true,
-			  features: ['playpause', 'progress', 'current','duration','tracks','captions', 'volume','fullscreen'],
-			  alwaysShowControls: true
-
-});
-
-		$('.mejs-inner').mouseleave(function() {
-			if ($('video')[0].player.media.paused === false) { 
-				$(".mejs-playpause-button").fadeOut("slow");
-				$(".mejs-time").fadeOut("slow");
-				$(".mejs-volume-button").fadeOut("slow");
-				$(".mejs-fullscreen-button").fadeOut("slow");
-				$(".mejs-captions-button").fadeOut("slow");
-				$('.mejs-time-rail').css('margin-top', '45px');
-				}
-		});
-		
-		$('.mejs-inner').mouseenter( function() {
-			$(".mejs-playpause-button").fadeIn("slow");
-			$(".mejs-time").fadeIn("slow");
-			$(".mejs-volume-button").fadeIn("slow");
-			$(".mejs-fullscreen-button").fadeIn("slow");
-			$(".mejs-captions-button").fadeIn("slow");
-		    $('.mejs-time-rail').css('margin-top', '0px');
-		        		
-				});
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="mejs/mediaelement-and-player.min.js"></script>
+	<script src="video.js"></script>
+	<script src="highlight.js"></script>
   </body>
 
           
