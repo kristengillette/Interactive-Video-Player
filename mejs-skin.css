@@ -1,4 +1,3 @@
-/* TED player */
 .mejs-container.mejs-treehouse {
 	margin: 0 auto;
 }
@@ -193,6 +192,26 @@ padding: 7px 3px 0 3px;
 
 .mejs-overlay-button {
 	display: none;
+}
+
+.mejs-container {
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 57%;
+}
+.mejs-overlay, .mejs-poster {
+  width: 100% !important;
+  height: 100% !important;
+}
+.mejs-mediaelement video {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mejs-container, .mejs-embed, .mejs-embed body {
+background:transparent;
 }
 
 
