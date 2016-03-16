@@ -58,14 +58,14 @@ startLanguauge: 'en',
 });
 
 		$('.mejs-inner').mouseleave(function() {
-			if ($('video')[0].player.media.paused == false) { 
+			if ($('video')[0].player.media.paused === false) { 
 				$(".mejs-playpause-button").fadeOut("slow");
 				$(".mejs-time").fadeOut("slow");
 				$(".mejs-volume-button").fadeOut("slow");
 				$(".mejs-fullscreen-button").fadeOut("slow");
 				$(".mejs-captions-button").fadeOut("slow");
 				$('.mejs-time-rail').css('margin-top', '45px');
-				};
+				}
 		});
 		
 		$('.mejs-inner').mouseenter( function() {
